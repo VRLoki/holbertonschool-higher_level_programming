@@ -4,7 +4,7 @@
 from urllib import request
 
 if __name__ == "__main__":
-    with request.urlopen("https://intranet.hbtn.io/status") as page:
+    with request.urlopen("https://swapi.dev/api/") as page:
         content = page.read()
         print("Body response:")
         print("\t- type: {}".format(type(content)))
